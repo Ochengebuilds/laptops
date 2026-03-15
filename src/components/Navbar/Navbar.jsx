@@ -1,8 +1,6 @@
-// src/components/Navbar/Navbar.jsx
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faShoppingBag, faHeart, faUser, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes, faShoppingBag, faSearch } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -12,38 +10,24 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-container">
         {/* Logo Section */}
-        <Link to="/" className="nav-logo">
-          <span className="logo-text">COMFORT</span>
-          <span className="logo-sub">TECH</span>
-        </Link>
+        <div className="nav-logo">
+          <h2>Comfort<span>Tech</span></h2>
+        </div>
 
-        {/* Navigation Links */}
-        <ul className={isMobile ? "nav-links-mobile" : "nav-links"} 
-            onClick={() => setIsMobile(false)}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/shop">Laptops</Link></li>
-          <li><Link to="/brands">Brands</Link></li>
-          <li><Link to="/support">Support</Link></li>
+        {/* Links Section - Hidden/Shown on Mobile */}
+        <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
-        {/* Action Icons */}
+        {/* Right Side Icons & Toggle */}
         <div className="nav-icons">
-          <button className="icon-btn search-btn">
-            <FontAwesomeIcon icon={faSearch} />
-          </button>
-          <Link to="/wishlist" className="icon-link">
-            <FontAwesomeIcon icon={faHeart} />
-            <span className="badge">0</span>
-          </Link>
-          <Link to="/cart" className="icon-link">
-            <FontAwesomeIcon icon={faShoppingBag} />
-            <span className="badge">2</span>
-          </Link>
-          <Link to="/login" className="icon-link user-icon">
-            <FontAwesomeIcon icon={faUser} />
-          </Link>
+          <button className="icon-btn"><FontAwesomeIcon icon={faSearch} /></button>
+          <button className="icon-btn"><FontAwesomeIcon icon={faShoppingBag} /></button>
           
-          {/* Mobile Menu Toggle */}
+          {/* Hamburger Menu - Only visible on small screens */}
           <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
             <FontAwesomeIcon icon={isMobile ? faTimes : faBars} />
           </button>
