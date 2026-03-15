@@ -1,0 +1,81 @@
+// src/assets/assets.js
+export const productData = [ 
+  {
+    "id": 1,
+    "name": "Zenith Pro 16 - Ultra Slim",
+    "brand": "ComfortTech",
+    "price": 1299,
+    "oldPrice": 1450,
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=500",
+    "specs": "Intel Core i9 | 32GB RAM | 1TB SSD",
+    "category": "High Performance",
+    "onSale": true,
+    "isNew": true
+  },
+  {
+    "id": 2,
+    "name": "EchoBook Air - 13 inch",
+    "brand": "ComfortTech",
+    "price": 899,
+    "oldPrice": null,
+    "rating": 4,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=500",
+    "specs": "Apple M2 | 8GB RAM | 256GB SSD",
+    "category": "Portable",
+    "onSale": false,
+    "isNew": false
+  },
+  {
+    "id": 3,
+    "name": "Titan G-Series Gaming",
+    "brand": "ComfortTech",
+    "price": 2100,
+    "oldPrice": 2400,
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&q=80&w=500",
+    "specs": "RTX 4080 | Ryzen 9 | 64GB RAM",
+    "category": "Gaming",
+    "onSale": true,
+    "isNew": true
+  },
+  {
+    "id": 4,
+    "name": "Zenith Pro 16 - Ultra Slim",
+    "brand": "ComfortTech",
+    "price": 1299,
+    "oldPrice": 1450,
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=500",
+    "specs": "Intel Core i9 | 32GB RAM | 1TB SSD",
+    "category": "High Performance",
+    "onSale": true,
+    "isNew": true
+  },
+  {
+    "id": 5,
+    "name": "EchoBook Air - 13 inch",
+    "brand": "ComfortTech",
+    "price": 899,
+    "oldPrice": null,
+    "rating": 4,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=500",
+    "specs": "Apple M2 | 8GB RAM | 256GB SSD",
+    "category": "Portable",
+    "onSale": false,
+    "isNew": false
+  },
+  {
+    "id": 6,
+    "name": "Titan G-Series Gaming",
+    "brand": "ComfortTech",
+    "price": 2100,
+    "oldPrice": 2400,
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&q=80&w=500",
+    "specs": "RTX 4080 | Ryzen 9 | 64GB RAM",
+    "category": "Gaming",
+    "onSale": true,
+    "isNew": true
+  },
+]

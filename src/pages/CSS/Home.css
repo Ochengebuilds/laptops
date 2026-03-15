@@ -1,0 +1,115 @@
+/* src/pages/Home.css */
+
+/* src/components/Hero/Hero.css */
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #EEF1FF; /* Light background from your palette */
+  padding: 60px 10%;
+  height: 500px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-subtitle {
+  color: #B1B2FF; /* Primary purple */
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #222;
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+.text-highlight {
+  color: #B1B2FF;
+}
+
+.hero-content p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background-color: #222;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #B1B2FF;
+}
+
+.hero-image-box {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image-box img {
+  max-width: 100%;
+  height: auto;
+  /* Subtle drop shadow to keep it modern */
+  filter: drop-shadow(20px 20px 50px rgba(0,0,0,0.1));
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .hero-image-box {
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+}
+.product-grid {
+  display: grid;
+  /* Desktop: 3 products per row */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tablets and Mobile: Force 2 products per row */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* At least 2 products */
+    gap: 15px; /* Slightly smaller gap for small screens */
+    padding: 10px;
+  }
+}
+
+/* Extra small mobile: ensure they don't look cramped */
+@media (max-width: 400px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

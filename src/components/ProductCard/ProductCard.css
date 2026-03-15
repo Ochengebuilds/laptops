@@ -1,0 +1,128 @@
+/* src/components/ProductCard/ProductCard.css */
+
+.product-card {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Subtle hover effect: light border change and depth */
+.product-card:hover {
+  border-color: #D2DAFF; /* */
+  box-shadow: 0 10px 30px rgba(177, 178, 255, 0.1); /* */
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #fbfbfb; /* Very light background for images */
+  border-radius: 8px;
+}
+
+.product-image {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+  /* Soft shadow on the image itself for a 3D feel */
+  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.08));
+}
+
+.modern-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #B1B2FF; /* Using your purple highlight */
+  color: white;
+  padding: 4px 12px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.product-details {
+  text-align: center;
+  width: 100%;
+}
+
+.brand-name {
+  font-size: 11px;
+  color: #AAC4FF; /* */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.product-title {
+  font-size: 15px;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  height: 42px; /* Ensures all cards stay the same height */
+  overflow: hidden;
+}
+
+.stars-row {
+  margin-bottom: 12px;
+}
+
+.star-active { color: #FFD700; font-size: 11px; margin: 0 1px; }
+.star-inactive { color: #E0E0E0; font-size: 11px; margin: 0 1px; }
+
+.price-box {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.price-new {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.price-was {
+  font-size: 14px;
+  color: #bbb;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+/* src/components/ProductCard/ProductCard.css updates */
+
+@media (max-width: 600px) {
+  .image-wrapper {
+    height: 150px; /* Reduce height on mobile so more products fit on screen */
+  }
+
+  .product-title {
+    font-size: 13px; /* Slightly smaller text for 2-column mobile layout */
+    height: 38px;
+  }
+
+  .price-new {
+    font-size: 15px;
+  }
+
+  .price-was {
+    font-size: 12px;
+  }
+
+  .brand-name {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+}

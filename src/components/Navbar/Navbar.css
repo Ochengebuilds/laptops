@@ -1,0 +1,91 @@
+/* src/components/Navbar/Navbar.css */
+.navbar {
+  height: 80px;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-3d); /* Added depth here */
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo .logo-text {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--dark-purple);
+}
+
+.nav-logo .logo-sub {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-link {
+  position: relative;
+  font-size: 1.2rem;
+  color: var(--dark-purple);
+  transition: var(--transition);
+}
+
+.icon-link:hover {
+  transform: translateY(-3px); /* 3D lift effect */
+  color: var(--primary-color);
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Responsive Logic */
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-links { display: none; }
+  .mobile-menu-icon { display: block; }
+  
+  /* You can expand the mobile menu styles here later */
+}
