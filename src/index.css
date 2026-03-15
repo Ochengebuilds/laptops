@@ -26,12 +26,13 @@
    font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
-
+  
 
 }
 #root {
 
   overflow-x: hidden;
+  width: 100%;
 }
 
 body {
